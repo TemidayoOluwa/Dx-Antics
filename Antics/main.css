@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Varta', sans-serif;
+}
 
 /* Major fixes*/
 
@@ -18,7 +22,7 @@
 }
 
 .left-div-content{
-    padding: 50px 150px 20px 150px;
+    padding: 50px 100px 20px 100px;
 }
 .desktop-links{
     display: flex;
@@ -26,7 +30,8 @@
 }
 .desktop-links h1{
     color: var(--main-color) ;
-    font-size: 28px;
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
 }
 
 .desktop-links ul{
@@ -35,8 +40,8 @@
 }
 .desktop-links ul li{
     list-style: none;
-    padding: 0 20px;
-    font-size: 14px;
+    padding: 0 15px;
+    font-size: 12px;
     color: var(--main-text-color);
 }
 .desktop-leftdiv-items h5{
@@ -45,6 +50,7 @@
 }
 .desktop-leftdiv-items p{
     font-size: 50px;
+    font-family: 'Merriweather', serif, sans-serif;;
     color: var(--main-color);
 }
 .desktop-leftdiv-items span{
@@ -76,8 +82,8 @@
 
 }
 .arrow{
-    padding:  15px;
-    font: 16px;
+    padding: 0 5px;
+    font: 12px;
 }
 .logo-container{
     display: flex;
@@ -108,6 +114,7 @@
 .mobile-header h1{
     color: var(--white-color);
     font-size: 35px;
+    font-family: 'Merriweather', serif;
 }
 .hamburger-container{
     width: 20px;
@@ -160,13 +167,15 @@
     color: var(--white-color);
 }
 .mobile-items h5{
+    
     padding: 40px 0 20px 0;
 }
 .mobile-items p{
     font-size: 40px;
+    font-family: 'Merriweather', serif;
 }
 .mobile-items span{
-    padding: 20px 0 40px 0;
+    padding: 20px 0;
     display: block;
 }
 .mobile-items .icon-down{
@@ -205,16 +214,17 @@
 }
 .firstsection-leftdiv{
     width: 40%;
-    padding: 60px 0 0 80px;
+    padding: 60px 0 0 40px;
 }
 .firstsection-leftdiv p{
     font-size: 50px;
+    font-family: 'Merriweather', sans-serif;
     color: var(--main-text-color);
 }
 .firstsection-leftdiv span{
     color: var(--main-color);
-    font-size: 18px;
-    padding: 40px 0;
+    font-size: 12px;
+    padding: 20px 0;
     display: block;
 }
 .firstsection-rightdiv{
@@ -228,14 +238,16 @@
     height: 200px;
 }
 .fs-rightdiv-cards h1{
+    font-family: 'Varta', serif;
     color: var(--main-color);
-    font-size: 32px;
+    font-size: 28px;
 }
 .fs-rightdiv-cards p{
+    
     color: var(--main-text-color);
     padding: 20px 0;
-    line-height: 1.2;
-    font-size: 18px;
+    line-height: 1.6;
+    font-size: 16px;
 }
 .first-card-set{
     width: 50%;
@@ -264,7 +276,7 @@ footer{
 }
 .footer-leftdiv span{
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px 0;
     display: block;
 }

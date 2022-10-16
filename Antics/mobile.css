@@ -11,11 +11,13 @@
     .mobile-header-section{
         background: url("./header.png");
         background-size: cover;
+        background-repeat: no-repeat;
         
     }
     .mobile-header{
         display: flex;
     }
+    
     .mobile-items{
         display: block;
     }
