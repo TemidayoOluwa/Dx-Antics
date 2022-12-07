@@ -8,7 +8,10 @@ body{
     /* font-family: 'Merriweather', serif; */
     font-family: 'Varta', sans-serif;
 }
-
+img{
+    width: 95%;
+    height: 100%;
+}
 /* Major fixes*/
 
 /* desktop header section starts here */
@@ -151,7 +154,7 @@ body{
     content: "";
     background: var(--white-color);
     position: absolute;
-    transform: rotate(-45);
+    transform: rotate(-45deg);
 }
 .showburger .menubar::after{
     width: 100%;
@@ -159,7 +162,7 @@ body{
     content: "";
     background: var(--white-color);
     position: absolute;
-    transform: rotate(45);
+    transform: rotate(45deg);
 }
 .mobile-items{
     display: none;
@@ -173,6 +176,28 @@ body{
 .mobile-items p{
     font-size: 40px;
     font-family: 'Merriweather', serif;
+}
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 10%;
+    transform: translateX(102%);
+    transition: all 0.4s ease;
+    overflow: hidden;
+    z-index: 3;
+}
+.showmobilenav{
+    transform: translateX(0);
+}
+.mobile-nav ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 20px;
+    background-color: var(--bg-color);
+    
+}
+.mobile-nav ul li:hover{
+    background: transparent;
 }
 .mobile-items span{
     padding: 20px 0;
@@ -256,8 +281,8 @@ body{
     width: 50%;
 }
 /* first section ends here */
-/* footer */
-footer{
+/* about me section starts here */
+section{
     width: 90%;
     margin: 0 auto;
     padding: 40px 80px;
@@ -265,27 +290,27 @@ footer{
     justify-content: space-between;
     align-items: center;
 }
-.footer-leftdiv h1{
+.about-me-leftdiv h1{
     font-size: 40px;
 
 }
-.footer-leftdiv p{
+.about-me-leftdiv p{
     color: var(--main-text-color);
     padding: 20px 0;
     font-size: 20px;
 }
-.footer-leftdiv span{
+.about-me-leftdiv span{
     color: var(--main-color);
     font-size: 12px;
     padding: 10px 0;
     display: block;
 }
-.footer-rightdiv input{
+.about-me-rightdiv input{
     padding: 10px 15px;
     border: none;
     background: var(--bg-color);
 }
-.footer-rightdiv button{
+.about-me-rightdiv button{
     padding: 10px 60px;
     background: var(--button);
     color: var(--bg-color);
@@ -293,4 +318,201 @@ footer{
     outline: none;
 }
 
-/* footer */
+/* about me section ends here */
+
+/* swiper js section starts here */
+.swiper {
+    margin: 0 0 40px auto;
+    width: 95%;
+    height: 500px;
+}
+
+.swiper-wrapper{
+    width: 48%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    /* color: var(--main-color); */
+    /* position: absolute; */
+    display: none;
+}
+.swiper-scrollbar, .swiper-pagination{
+    display: none;
+}
+/* swiper js section ends here */
+
+/* navigation alt section starts here */
+.navigation-alt{
+    width: 90%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-alt-leftdiv{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-alt-leftdiv .inspo{
+    color: var(--black);
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    width: 50%;
+    margin-right: 150px;
+    font-weight: 100;
+}
+.about-me-leftdiv .inspo-content p{
+    padding: 0 15px;
+    letter-spacing: 1.5px;
+    line-height: 2px;
+    font-size: 18px;
+    font-family: 'Varta', sans-serif;
+
+}
+.nav-alt-rightdiv{
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    padding-bottom: 20px;
+}
+.nav-alt-rightdiv .prev {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.nav-alt-rightdiv .next {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+/* navigation alt section ends here */
+
+/* breakdown section starts here */
+.breakdown-section{
+    background: var(--bg-color);
+    /* height: 500px; */
+    padding: 40px 0;
+
+}
+.breakdown-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin: 0 auto;
+
+}
+.breakdown-content h3{
+    color: var(--black) ;
+    font-family: 'Merriweather', serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+
+}
+.breakdown-content .breakdown-leftdiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 58%;
+}
+.breakdown-leftdiv ul{
+    list-style: none;
+    color: var(--main-text-color);
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'Varta', sans-serif;
+
+}
+.breakdown-leftdiv ul h1{
+ font-size: 16px;
+ padding-bottom: 10px;
+
+}
+.breakdown-content .breakdown-rightdiv{
+    width: 30%;
+}
+.breakdown-rightdiv h3{
+    font-size: 16px;
+    padding-bottom: 20px;
+    letter-spacing: 0;
+    color: var(--main-text-color);
+    font-family: 'Varta', sans-serif;
+
+}
+.breakdown-rightdiv img{
+    width: 200px;
+}
+.breakdown-rightdiv p{
+    font-size: 12px;
+    line-height: 30px;
+    font-family: 'Varta', sans-serif;
+    width: 60%;
+    color: var(--main-text-color);
+
+}
+.breakdown-rightdiv span{
+    color: var(--main-color);
+    font-size: 12px;
+    padding: 10px 0;
+    display: block;
+}
+/* breakdown section ends here */
+
+/* image set starts here */
+.image-set{
+    display: none;
+}
+/* image set ends here */
+
+/* footer starts here */
+footer{
+    background: var(--bg-color);
+    padding: 30px 0;
+    
+}
+.firstdiv, .seconddiv{
+    display: flex;
+   
+    width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 30px;
+    font-family: 'Varta', sans-serif;
+    color: var(--main-text-color);
+}
+.firstdiv{
+    justify-content: center;
+    padding: 0 0 40px 0;
+}
+.housing{
+    display: flex;
+    border: 2px solid var(--main-color);
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    margin-right: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.seconddiv{
+    justify-content: space-between;
+}
+.seconddiv .second-rightdiv{
+    display: block;    
+}
+.second-rightdiv span{
+    margin-right: 40px ;
+}
+/* footer ends here */

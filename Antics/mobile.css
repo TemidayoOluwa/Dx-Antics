@@ -17,7 +17,10 @@
     .mobile-header{
         display: flex;
     }
-    
+    .mobile-nav{
+        display: block;
+        width: 100%;
+    }
     .mobile-items{
         display: block;
     }
@@ -44,10 +47,10 @@
     .second-card-set{
         width: 100%;
     }
-    .footer-leftdiv{
+    .about-me-leftdiv{
         display: none;
     }
-    .footer-rightdiv{
+    .about-me-rightdiv{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -55,8 +58,59 @@
         width: 90%;
         margin: 0 auto;
     }
-    .footer-rightdiv button{
+    .about-me-rightdiv button{
         margin: 10px 0;
         padding: 10px 60px;
+    }
+    .swiper{
+        display: none;
+    }
+    .nav-alt-rightdiv{
+        display: none;
+    }
+    .nav-alt-leftdiv{
+        display: block;
+        width: 100%;
+    }
+    .nav-alt-leftdiv .inspo{
+        padding-bottom: 20px;
+    }
+    .breakdown-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .breakdown-content .breakdown-leftdiv{
+        flex-direction: column;
+    }
+    .breakdown-content h3{
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .breakdown-content .breakdown-leftdiv ul{
+        padding-bottom: 20px;
+       
+    }
+    .breakdown-content .breakdown-rightdiv {
+        width: 100%;
+    }
+
+    .breakdown-rightdiv p{
+        width: 100%;
+    }
+    .image-set{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .image-set img{
+        width: 360px;
+        height: 200px;
+        object-fit: contain;
+    }
+    .seconddiv{
+        flex-wrap: wrap-reverse;
     }
 }

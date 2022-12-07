@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital@1&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital@1&family=Varta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:ital@1&family=Varta&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="main.css">
@@ -50,9 +54,17 @@
         <nav class="mobile-header-section">
             <div class="mobile-header">
                 <h1>antics</h1>
-                <div class="hamburger-container">
+                <div class="hamburger-container" onclick="changeshow()">
                     <div class="menubar"></div>
                 </div>
+            </div>
+            <div class="mobile-nav" onclick="changeshow()">
+                <ul>
+                    <li>Products</li>
+                    <li>Rooms</li>
+                    <li>Services</li>
+                    <li>Inspirations</li>
+                </ul>
             </div>
             <div class="mobile-items">
                 <h5>HOME DESIGN</h5>
@@ -100,18 +112,174 @@
     </div>
     <!--first section ends here  -->
 
-    <!-- footer section starts here -->
-    <footer>
-        <div class="footer-leftdiv">
+    <!-- about me section starts here -->
+    <section>
+        <div class="about-me-leftdiv">
             <h1>Be aware of the latest trends</h1>
             <p>Stay informed of new trends, but also of our various offers.</p>
             <span>Learn more<i class="fa-solid fa-angle-right arrow"></i> </span>
         </div>
-        <div class="footer-rightdiv">
+        <div class="about-me-rightdiv">
             <input type="email" placeholder="email@address.com">
             <button>Subscribe</button>
         </div>
+    </section>
+    <!-- about me section ends here -->
+
+    <!-- swiper img section starts here -->
+    
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="./slide1.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./slide2.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./slide3.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./slide5.png" alt="">
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    <!-- swiper img section ends here -->
+
+
+    <!-- the navigation alt starts here -->
+    <div class="navigation-alt">
+        <div class="nav-alt-leftdiv">
+            <div class="inspo">
+                <h3>Inspiration</h3>
+            </div>
+            <div class="inspo-content">
+                <p>Our experts are keen to stay on top of trends in order to offer you new inspirations for your interior and exterior every day. Remember that to inspire you we have to inspire ourselves and we want to share that with you.</p>
+            </div>
+        </div>
+        <div class="nav-alt-rightdiv">
+            <div class="prev">
+                <i class="fa-solid fa-angle-left arrow"></i>
+            </div>
+            <div class="next">
+                <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
+        </div>
+    
+    </div>
+    <!-- the navigation alt ends here -->
+
+    <!-- image sets section starts here -->
+    <div class="image-set">
+        <div class="image-one">
+            <img src="./img1.png" alt="">
+            <span>Chair</span>
+        </div>
+        <div class="image-two">
+            <img src="./img3.png" alt="">
+            <span>Cooked</span>
+        </div>
+        <div class="image-three">
+            <img src="./img2.png" alt="">
+            <span>Living Room</span>
+        </div>
+        <div class="image-four">
+            <img src="./slide5.png" alt="">
+            <span>Tables</span>
+        </div>
+    </div>
+    <!-- image sets section ends here -->
+
+    <!-- the breakdown section starts here -->
+    <div class="breakdown-section">
+        <div class="breakdown-content">
+        <h3>antic</h3>
+        <div class="breakdown-leftdiv">
+            <ul class="products">
+                <h1>Products</h1>
+                <li>Furniture</li>
+                <li>Decoration</li>
+                <li>Baby and Child</li>
+                <li>Connnected Home</li>
+            </ul>
+            <ul class="rooms">
+                <h1>Rooms</h1>
+                <li>Living Rooms</li>
+                <li>Dining Rooms</li>
+                <li>Cooked</li>
+                <li>Bedroom</li>
+                <li>Office</li>
+                <li>laundry</li>
+                <li>Garage</li>
+            </ul>
+            <ul class="Services">
+                <h1>Services</h1>
+                <li>Click and Collect</li>
+                <li>Conception</li>
+                <li>Installation</li>
+                <li>Advices</li>
+                <li>Gift Cards</li>
+            </ul>
+            <ul class="about3">
+                <h1>About</h1>
+                <li>Our Stories</li>
+                <li>Our Stores</li>
+                <li>Our Partners</li>
+            </ul>
+        </div>
+        <div class="breakdown-rightdiv">
+            <h3>We Respect Our Planet</h3>
+            <img src="./Picture.png" alt="">
+            <p>We’re taking positive steps to reduce<br/> our impact on the planet. For us, that<br/> means retailing responsibly. We've set<br/> a number of goals to get us there.</p>
+            <span>Learn more<i class="fa-solid fa-angle-right arrow"></i> </span>
+        </div>
+        </div>
+    </div>
+    <!-- the breakdown section ends here -->
+
+    <!-- the actual footer starts here -->
+    <footer>
+        <div class="firstdiv">
+            <div class="housing">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="housing">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="housing">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="housing">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="seconddiv">
+            <div class="second-leftdiv">
+                <p>© 2022  Israel Akinwumi , Original Figma design by Agence Dnd ( Antic )</p>
+            </div>
+            <div class="second-rightdiv">
+                <span>Privacy policy</span>
+                <span>Term of service</span>
+                <span>Language</span>
+            </div>
+        </div>
     </footer>
-    <!-- footer section ends here -->
+    <!-- the actual footer ends here -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
